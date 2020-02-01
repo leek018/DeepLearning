@@ -40,3 +40,7 @@
 ### 20-02-01
 
 + Batchnorm,Affine,Relu,Sigmoid,SoftMaxWithLoss,Adam,Convolution,Maxpooling -CPU
+
+## Cite
++ https://github.com/pjreddie/darknet
++ deeplearning from scratch
