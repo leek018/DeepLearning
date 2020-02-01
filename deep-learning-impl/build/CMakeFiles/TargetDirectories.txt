@@ -1,0 +1,3 @@
+/home/leek/practice/deep-learning/deep-learning-backpropa/build/CMakeFiles/rebuild_cache.dir
+/home/leek/practice/deep-learning/deep-learning-backpropa/build/CMakeFiles/twolayer.dir
+/home/leek/practice/deep-learning/deep-learning-backpropa/build/CMakeFiles/edit_cache.dir
