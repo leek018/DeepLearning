@@ -1,0 +1,74 @@
+syntax = "proto3";
+package LEEK;
+
+message TrainParameter{
+
+}
+
+message NetworkParameter {
+    string name = 1;
+    repeated LayerParameter layer;
+
+}
+
+message LayerParameter{
+    string name = 1;
+    string type = 2;
+
+    AffineParameter affine_param = 3;
+    ConvolutionParameter convolution_param = 4;
+    BatchNormalizationParameter batchnorm_param = 5;
+    ReluParameter relu_param = 6;
+    DropoutParameter dropout_param = 7;
+    SigmoidParameter sigmoid_param = 8;
+    SoftmaxWithLossParameter softmaxwithloss_param = 9;
+    PoolingParameter pooling_param = 10;      
+    InputParameter input_param = 11;
+    DataParameter data_param = 12;
+}
+
+message AffineParameter {
+   int32 num_output = 1;        
+}
+
+message ConvolutionParameter {
+    int32 stride = 1 [default = 1];
+    int32 pad_h = 2;
+    int32 pad_w = 3;
+    int32 kernel_h = 4;
+    int32 kernel_w = 5;
+    int32 kernel_num = 6;
+    
+} 
+
+message BatchNormalizationParameter {
+    int32 gammaLen = 2;
+    int32 betaLen = 3;
+}
+
+message ReluParameter{
+}
+
+message DropoutParameter{
+    double dropout_ratio = 1[default = 0.5];
+}
+message SigmoidParameter{
+
+} 
+
+message SoftmaxWithLossParameter{
+
+}
+message PoolingParameter {
+    int32 pad_h = 1;
+    int32 pad_w = 2;
+    int32 pool_h = 3;
+    int32 pool_w = 4;
+    int32 stride = 5; 
+}
+message InputParameter{
+    repeated int32 dim;
+}
+
+message DataParameter {
+    
